@@ -10,7 +10,7 @@ app.get('/', (req, res) => {
     res.json({ message: 'Hello world' })
 })
 // Starting server
-app.listen('1337')
+app.listen(process.env.PORT)
 app.use(morgan('tiny'))
 app.use(express.json())
 app.use(express.urlencoded({ extended: true }))
