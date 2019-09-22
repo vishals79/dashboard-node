@@ -1,12 +1,13 @@
 // Import packages
 const express = require('express')
+const cors = require('cors')
 const morgan = require('morgan')
 // App
 const app = express()
 // Morgan
 app.use(morgan('tiny'))
 // First route
-app.get('/', (req, res) => {
+app.get('/', cors(),(req, res) => {
     res.json({ message: 'Hello world' })
 })
 // Starting server
