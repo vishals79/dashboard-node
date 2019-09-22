@@ -11,7 +11,6 @@ app.get('/', (req, res) => {
 })
 // Starting server
 app.listen('1337')
-
 app.use(morgan('tiny'))
 app.use(express.json())
 app.use(express.urlencoded({ extended: true }))
