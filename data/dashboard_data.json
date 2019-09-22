@@ -1,0 +1,10 @@
+[
+    {
+        "temperature" : "25",
+        "weather": "Cloudy",
+        "beer_bottles": "35",
+        "visitors": "5000",
+        "watering_time" : "5:00 PM"
+
+    }
+]
